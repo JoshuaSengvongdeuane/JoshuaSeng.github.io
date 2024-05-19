@@ -1,26 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style2.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua Sengvongdeuane's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
     <nav id="desktop-nav">
-        <div class="logo">Joshua Sengvongdeuane</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+      <div class="logo">Joshua Sengvongdeuane</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Joshua Sengvongdeuane</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./circle_prof.png" alt="Joshua Sengvongdeuane profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <div class="type-container">
+          <h1 class="title" id="type-text">Joshua Sengvongdeuane</h1>
+        </div>
+        <p class="section__text__p2">Aspiring Data Scientist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Joshua-Sengvongdeuane-Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/joshua-seng/'"
+          />
+          <img
+            src="./github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/JoshuaSengvongdeuane'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./A7300896.JPG"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors of Art in Data Science @ <b class="gradient-text"> University of California, Berkeley </b><br />Domain Emphasis in Economics</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Pleasure having you here! My name is Joshua Sengvongdeuane. I am a recent graduate from University of California, Berkeley. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <img
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="exp-arrow"
+        onclick="location.href='./#experience'"
+      />
+    <section id="experience">
+      <div class="timeline">
+        <h1 class="title">Experience</h1>
+        <ul class="experience-box">
+          <li class="exp-list" style="--accent-color:#41516C">
+            <div class="date">Jan 2024-May 2024</div>
+            <div class="exp-title">Data Discovery Research</div>
+            <div><em>Data Analyst Intern</em></div>
+            <div class="descr">
+              <ul>
+                <li>Led a research initiative to investigate the climate change impacts in rural Tanzania, Kenya, Uganda, and
+                  Mozambique, focusing on women’s labor force and gender norms amidst changing land productivity.
+                </li>
+                <li>Conducted data analysis in R to explore climate change trends to identify correlations between climate change,
+                  women’s labor force, and gender norms.
+                </li>
+                <li>Created geospatial visualizations using QGIS software to depict climate change patterns in target locations.
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="exp-list" style="--accent-color:#FBCA3E">
+              <div class="date">June 2023-August 2023</div>
+              <div class="exp-title">CS61BL: Data Structures and Algorithms @ UC Berkeley</div>
+              <div><em>Academic Intern</em></div>
+              <div class="descr">
+                <ul>
+                  <li>Assisted 30+ students on programming assignments and answered questions.</li>
+                  <li>Lectured on topics regarding data structures and algorithms such as graphs, trees, and prim’s algorithm to provide a
+                    better understanding for students.</li>
+                </ul>
+              </div>
+          </li>
+          <li class="exp-list" style="--accent-color:#E24A68">
+              <div class="date">March 2022-May 2022</div>
+              <div class="exp-title">Lunar LLC</div>
+              <div><em>Blockchain Investment Analyst Intern</em></div>
+              <div class="descr">
+                <ul>
+                  <li>Surveying 2000+ partnership opportunities through media platforms such as Discord, Twitter, and TikTok.</li>
+                  <li>Contacting NFT creators for partnerships and opportunities to purchase NFTs from Lunar.</li>
+                  <li>Team efforts have yielded 15+ partnerships with NFT creators and have grown Twitter following by 250%.</li>
+                  <li>Moderating Discord chats regarding questions about Lunar’s flagship NFT project.</li>
+                </ul>
+              </div>
+          </li>
+          <li class="exp-list" style="--accent-color:#1B5F8C">
+              <div class="date">June 2020-August 2020</div>
+              <div class="exp-title">JP Morgan</div>
+              <div><em>Summer Intern</em></div>
+              <div class="descr">
+                <ul>
+                  <li>Analyzed and developed strategies for client, Perot Museum of Nature and Science, to redesign their employee
+                    training methods.</li>
+                  <li>Collaborated with 3 interns to create a detailed presentation for Perot Museum of Nature and Science that outlined
+                    new strategies for employee training. Presented to the entire board of The Perot Museum of Nature and Science, as
+                    well as my JP Morgan managers.</li>
+                  <li>Conducted market research on various game-based learning platforms that enhance employee performance.
+                    Analyzed research & determined that platform, Kahoot, would be the most effective training tool for The Perot
+                    Museum.</li>
+                </ul>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <img
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="exp-arrow"
+        onclick="location.href='./#projects'"
+      />
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="center">
+        <div class="carousel-wrapper">
+          <!-- abstract radio buttons for slides -->
+          <input id="slide1" type="radio" name="controls" checked="checked" />
+          <input id="slide2" type="radio" name="controls" />
+          <input id="slide3" type="radio" name="controls" />
+          <input id="slide4" type="radio" name="controls" />
+          <input id="slide5" type="radio" name="controls" />
+      
+          <!-- navigation dots -->
+          <label for="slide1" class="nav-dot"></label>
+          <label for="slide2" class="nav-dot"></label>
+          <label for="slide3" class="nav-dot"></label>
+          <label for="slide4" class="nav-dot"></label>
+          <label for="slide5" class="nav-dot"></label>
+      
+          <!-- arrows -->
+          <label for="slide1" class="left-arrow"> < </label>
+          <label for="slide2" class="left-arrow"> < </label>
+          <label for="slide3" class="left-arrow"> < </label>
+          <label for="slide4" class="left-arrow"> < </label>
+          <label for="slide5" class="left-arrow"> < </label>
+      
+          <label for="slide1" class="right-arrow"> > </label>
+          <label for="slide2" class="right-arrow"> > </label>
+          <label for="slide3" class="right-arrow"> > </label>
+          <label for="slide4" class="right-arrow"> > </label>
+          <label for="slide5" class="right-arrow"> > </label>
+      
+          <div class="carousel">
+            <ul>
+              <li>
+                <img src="./DDP Poster.png" alt="Worked on a project to find patterns between climate and women's power in Africa"/>
+              </li>
+              <li>
+                <img src="./git_image.png" alt="Programmed a simpler version control system similar to Git">
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/osef-art/ministick/main/data/img/main/ministick-clip-3.gif" />
+              </li>
+              <li>
+                <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/smoke.jpg">
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </section>
+    <img
+        src="./arrow.png"
+        alt="Arrow icon"
+        class="exp-arrow"
+        onclick="location.href='./#contact'"
+      />
 
-
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:joshua.b.seng@gmail.com">joshua.b.seng@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/joshua-seng">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
