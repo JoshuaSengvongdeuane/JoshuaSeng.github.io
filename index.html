@@ -182,59 +182,65 @@
         class="exp-arrow"
         onclick="location.href='./#projects'"
       />
+
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="center">
-        <div class="carousel-wrapper">
-          <!-- abstract radio buttons for slides -->
-          <input id="slide1" type="radio" name="controls" checked="checked" />
-          <input id="slide2" type="radio" name="controls" />
-          <input id="slide3" type="radio" name="controls" />
-          <input id="slide4" type="radio" name="controls" />
-          <input id="slide5" type="radio" name="controls" />
-      
-          <!-- navigation dots -->
-          <label for="slide1" class="nav-dot"></label>
-          <label for="slide2" class="nav-dot"></label>
-          <label for="slide3" class="nav-dot"></label>
-          <label for="slide4" class="nav-dot"></label>
-          <label for="slide5" class="nav-dot"></label>
-      
-          <!-- arrows -->
-          <label for="slide1" class="left-arrow"> < </label>
-          <label for="slide2" class="left-arrow"> < </label>
-          <label for="slide3" class="left-arrow"> < </label>
-          <label for="slide4" class="left-arrow"> < </label>
-          <label for="slide5" class="left-arrow"> < </label>
-      
-          <label for="slide1" class="right-arrow"> > </label>
-          <label for="slide2" class="right-arrow"> > </label>
-          <label for="slide3" class="right-arrow"> > </label>
-          <label for="slide4" class="right-arrow"> > </label>
-          <label for="slide5" class="right-arrow"> > </label>
-      
-          <div class="carousel">
-            <ul>
-              <li>
-                <img src="./DDP Poster.png" alt="Worked on a project to find patterns between climate and women's power in Africa"/>
-              </li>
-              <li>
-                <img src="./git_image.png" alt="Programmed a simpler version control system similar to Git">
-              </li>
-              <li>
-                <img src="https://raw.githubusercontent.com/osef-art/ministick/main/data/img/main/ministick-clip-3.gif" />
-              </li>
-              <li>
-                <img src="https://raw.githubusercontent.com/osef-art/osef-art.github.io/master/src/assets/wallpapers/smoke.jpg">
-              </li>
-            
-            </ul>
+
+      <input type="radio" name="Projects" id="check1">
+      <input type="radio" name="Projects" id="check2">
+      <input type="radio" name="Projects" id="check3">
+      <input type="radio" name="Projects" id="check4">
+
+      <div class="project-container">
+        <h3>Project Gallery</h3>
+        <label for="check1" onclick="filterProjects('all')">All Projects</label>
+        <label for="check2" onclick="filterProjects('data-science')">Data Science</label>
+        <label for="check3" onclick="filterProjects('web-dev')">Web Development</label>
+        <label for="check4" onclick="filterProjects('misc')">Miscellaneous</label>
+      </div>  
+
+      <div class="project-gallery">
+        <a href="project_details_page.html" class="pic data-science">
+          <img src="DDP Poster.png">
+          <div class="description">
+            <p>This is a short description for the data science project.</p>
           </div>
-        </div>
+        </a>
+        <a href="project_details_page.html" class="pic web-dev">
+          <img src="git_image.png">
+          <div class="description">
+            <p>This is a short description for the web development project.</p>
+          </div>
+        </a>
+        <a href="project_details_page.html" class="pic misc">
+          <img src="DDP Poster.png">
+          <div class="description">
+            <p>This is a short description for the miscellaneous project.</p>
+          </div>
+        </a>
+        <a href="project_details_page.html" class="pic data-science">
+          <img src="DDP Poster.png">
+          <div class="description">
+            <p>This is a short description for the data science project.</p>
+          </div>
+        </a>
+        <a href="project_details_page.html" class="pic web-dev">
+          <img src="git_image.png">
+          <div class="description">
+            <p>This is a short description for the web development project.</p>
+          </div>
+        </a>
+        <a href="project_details_page.html" class="pic misc">
+          <img src="DDP Poster.png">
+          <div class="description">
+            <p>This is a short description for the miscellaneous project.</p>
+          </div>
+        </a>
       </div>
-      
+
     </section>
+
     <img
         src="./arrow.png"
         alt="Arrow icon"
