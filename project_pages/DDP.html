@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Climate, Land, and Women's Power</title>
+    <link rel="stylesheet" href="./DDP_css.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Climate, Land, and Women's Power</h1>
+        </div>
+    </header>
+
+    <section class="project-details">
+        <div class="section-content">
+            <h2>Project Overview</h2>
+            <p>As part of the Data Discovery Research Program for a semester, I was given the opportunity to work alongside a UC Berkeley Masters student, Juliana Gomez Consuegra, on a researched project started by two PhD students, Silivia Barbareschi and Beatrice Montano. In the realm of social research, understanding the dynamics of gender norms is crucial for addressing the societal disparities and creating inclusive environments. As part of the Afrobarometer survey conducted in 2019, we delved into a treasure trove of data gathered from everyday citizens across Africa. 
+            <br>
+            <br>
+            Focusing on four African countries-Tanzania, Mozambique, Kenya, and Uganda-we embark on a journey to discover any correlations between climate and gender norms. By meticulously analyzing the data from both the Afrobarometer and Copernicus Climate Data Store, we aimed to unearth any connections between climate trends and societal attitudes towards gender roles. 
+            </p>
+        </div>
+    </section>
+
+    <section class="project-features">
+        <div class="section-content">
+            <h2>Metholodogy</h2>
+            <p>Data collection and preprocessing was the first step to achieving our goal for this project. We had a numerous amount of available climate data given to us within the Copernicus Climate Data Store (CDS), as well as significant amounts of data from the Afrobarometer. From the CDS datasets, we decided to focus on two specific datasets, which are soil moisture data and land cover classification from the years 2015-2019. When downloading these datasets, they come in the form of NetCDF files, so we utilized QGIS to create maps to visually observe the data and to also extract the data to be used for further data analysis. 
+                <br>
+                <br>
+                To convert the data from the NetCDF to a format that can be used, we created a python script to convert the data from NetCDF to a CSV and completed some data cleaning. With the Afrobarometer data, there were many columns or features that were included, but not all were relevant to the project. So, we specifically chose columns that we believed would contribute to our goal. To name a few, we chose ‘equal chance to earn income’, ‘chance of equal paying job’, and ‘women have equal right to land’.
+                In addition, we also utilized QGIS to create useful maps such as the ones above to better view the data, such as the saturation level of soil in the targeted countries. With that data, we planned to complete data analysis to discover any correlations between climate and gender norms.
+            </p>
+        </div>
+    </section>
+
+    <section class="project-gallery">
+        <div class="section-content">
+            <h2>Project Images</h2>
+            <div class="image-grid">
+                <img src="/images/Tanzania_soil.png" alt="Map portraying the average soil saturation in Tanzania in Jan 2015">
+                <img src="/images/DDP Poster.png" alt="Poster conveying methodology and challenges with this semester project">
+                <img src="/images/Mozambique_soil.png" alt="Map portraying the average soil saturation in Mozambique in Jan 2015">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="my-role">
+        <div class="section-content">
+            <h2>Challenges</h2>
+            <ul>
+                <li>Given that we had climate data available from many years in the past, we decided to specifically focus on only a time interval of 5 years for efficiency and ease. However, when downloading the datasets, it took an extremely long time for it to download, typically a couple hours for it to complete. 
+                </li>
+                <li>A major challenge in which we continuously came across was when working with the raster data, because clipping the raster data took a long time to find a solution for. We still aren’t entirely certain as to why trying to clip the raster data was so difficult and only works at times.
+                </li>
+                <li>Another challenge we faced was having memory issues on our machines due to the size of the data and would have liked to somehow speed up the data processing as it took a significant amount of time.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="future-work">
+        <div class="section-content">
+            <h2>Future Work</h2>
+            <p>In the future, working with the other available climate datasets that are available in the Copernicus Climate Data Store is a task that could be done as there seem to be a plentiful amount of useful data. Getting more cloud computing power to speed up our data processing speed would be beneficial too. Since we didn’t have time, conducting more data analysis on the data would be something to do in the future more as well.
+            </p>
+        </div>
+    </section>
+    <section class="back-to-home">
+        <div class="section-content">
+            <a href="/index.html" class="button">Back to Home</a>
+        </div>
+    </section>
+    
+</body>
+</html>
