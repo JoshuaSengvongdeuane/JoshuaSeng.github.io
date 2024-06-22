@@ -27,7 +27,7 @@
     .section-container {
       display: block;
     }
-    .arrow {
+    .exp-arrow {
       display: none;
     }
     section,
@@ -100,4 +100,38 @@
     .text-container {
       text-align: justify;
     }
+    .project-container {
+      height: fit-content;
+    }
+
+    .project-container label {
+      font-size: 70%;
+    }
+
+    .project-gallery{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project-gallery img {
+      width: 100%;
+      filter: grayscale(30%);
+    }
+
+    .project-gallery .overlay {
+      display: flex; /* Show overlay on small screens */
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      color: black;
+      font-size: 1.5rem;
+      text-align: center;
+      font-style: italic;
+    }
   }
+

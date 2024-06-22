@@ -576,6 +576,10 @@ input {
   text-align: center;
 }
 
+.project-gallery .overlay {
+  display: none;
+}
+
 #projects h1 {
   font-weight: normal;
   font-size: 35px;
@@ -693,6 +697,11 @@ label:hover {
     margin: 0;
     padding: 10px;
     color: #fff;
+  }
+
+  .description h4 {
+    font-size: 200%;
+    margin-right: 20%;
   }
 
 /* CONTACT */

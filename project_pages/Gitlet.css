@@ -1,0 +1,112 @@
+/* styles.css */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.section {
+    display: flex;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+.section .text {
+    flex: 1;
+    padding: 20px;
+    color: #555;
+}
+
+.section .text h2 {
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.section .text p {
+    line-height: 1.8;
+    font-weight: 300;
+}
+
+.section .image {
+    flex: 1;
+    padding: 20px;
+}
+
+.section .image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section.reverse {
+    flex-direction: row-reverse;
+    background: linear-gradient(135deg, #e0f7fa 0%, #80deea 100%);
+}
+
+.section:nth-child(odd) {
+    background: linear-gradient(135deg, #e8f5e9 0%, #003262 100%);
+}
+
+.section:nth-child(even) {
+    background: linear-gradient(135deg, #fff3e0 0%, #FDB515 100%);
+}
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+    }
+
+    .section.reverse {
+        flex-direction: column;
+    }
+
+    .section .text, .section .image {
+        padding: 10px;
+    }
+}
+
+.text h2 {
+    font-size: 35px;
+}
+
+.back-to-home {
+    padding-bottom: 50px;
+}
+
+.back-to-home {
+    text-align: center; /* Align the button to the center */
+    margin-top: 20px; /* Add some space above the button */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e67e22;
+}
