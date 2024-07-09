@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #001F3F;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-content {
+    max-width: 200vh;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.project-details h2,
+.project-features h2,
+.my-role h2,
+.project-gallery h2,
+.future-work h2 {
+    color: #34495e;
+    border-bottom: 2px solid #f39c12;
+    padding-bottom: 10px;
+}
+
+.project-features ul {
+    color: #34495e;
+}
+
+.project-features ul li {
+    margin-bottom: 10px;
+}
+
+.project-gallery {
+    margin-top: 0px;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.back-to-home {
+    padding-bottom: 50px;
+}
+
+.back-to-home {
+    text-align: center; /* Align the button to the center */
+    margin-top: 20px; /* Add some space above the button */
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #e67e22;
+}
